@@ -18,30 +18,28 @@ h1 {
 #BoxForm {
     margin:20px;
     padding:20px 0 30px 20px;
-    width:660px;
-    height:380px;
+    width:auto;
+    height:auto;
     background:#fff;
     border:1px solid #dcdcdc;
     border-radius:10px;
 }
  
 #form ul li {
-    margin:20px 0;
+    margin:20px 20px 20px 20px;
     list-style:none;
     position:relative;
     clear:both;
 }
  
 #form label {
-    margin:5px 0;
-    line-height:45px;
-    width:80px;
+    margin:5px 5px;
     text-align:left;
     float:left;
     color:#666;
 }
  
-#form input#nome, #form input#num_pedras, #form input#tam_pedras, #form input#tipo_pedra, #form input#tipo_pedra_sortidas {
+#nome, #num_pedras, #tam_pedras, #tipo_pedra, #tipo_pedra_sortidas {
     float:left;
     padding:15px;
     border:1px solid #CCCCCC;
@@ -49,14 +47,15 @@ h1 {
     border-radius:5px;
     color:#BA5301;
 }
-#form input#name, #form input#email, #form input#subject {
+#nome, #num_pedras, #tam_pedras, #tipo_pedra, #tipo_pedra_sortidas  {
     width:350px;
 }
  
-#form textarea {
-    width:400px;
-    height:80px;
+#form select {
+    width:300px;
     resize:none;
+    margin-bottom:5px;
+    height: 30px;
 }
  
 #form input {
@@ -64,7 +63,7 @@ h1 {
     float:left;
 }
  
-#form input#send_message {
+#send_message {
     width:100px;
     height:40px;
     margin:20px 0 0 80px;
@@ -76,7 +75,7 @@ h1 {
     border-radius:5px;
 }
  
-#form input#send_message:hover {
+#send_message:hover {
     color:#999;
     background:#dcdcdc;
     border-color:#999;

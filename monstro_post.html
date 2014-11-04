@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="estilo.css">
+    <title>Monster Store</title>
+</head>
+<body>
+    
+    <div id="BoxForm">
+    <h1>Rock Store</h1>
+   <form action="http://terrivel.herokuapp.com/monster" method="post" id="form">
+    
+    <ul>                      
+        <li>
+            <label for="nome">Nome:</label>
+            <input type="text" required="" name="name" pattern="[a-z\s]+$" id="name" />
+        </li>
+        <li>
+            <label for="num_pedras">Quantidade de Pedras:</label>
+            <input type="number" required="" min="0" step="1">
+        </li>
+        <li>
+            <label for="tam_pedras">Tamanho das Pedras:</label>
+            <input type="number" value="3"  required="" min="1" max="7" step="0.5">        
+                
+        </li>
+        <li>
+            <label for="tipo_pedras_sortidas">Pedras Sortidas:</label>
+            <label><input name="tipo_pedras_sortidas" type="radio" value="sim">Sim</label>
+            <label><input name="tipo_pedras_sortidas" type="radio" value="nao">N&atildeo</label>
+        </li>
+        <li>
+            <label for="tipo_pedra">Tipo de Pedra:</label>
+            <select name="tipo_pedra" id="tipo_pedra">
+              <option value="marroada">Marroada</option>
+              <option value="ametista" >Ametista</option>
+              <option value="topazio">Topazio</option>
+              <option value="espinela">Espinela</option>
+            </select>
+        </li>
+        <li>
+            <label for="cor_ceu_1">Cor do Ceu 1:</label>
+            <input type="text" name="cor_ceu_1" pattern="[a-z\s]+$" id="cor_ceu_1" />
+        </li>
+        
+        <li>
+            <label for="cor_ceu_2">Cor do Ceu 2:</label>
+            <input type="text" name="cor_ceu_2" pattern="[a-z\s]+$" id="cor_ceu_2" />
+        </li>
+        <li>
+        <input type="submit" id="send_message" value="Enviar" />
+        </li>
+    </ul>
+    </form>
+    </div>
+</body>
+</html>
